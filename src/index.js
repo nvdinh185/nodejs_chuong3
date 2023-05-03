@@ -1,6 +1,7 @@
 const express = require('express');
-const route = require('./routes');
 const app = express();
+
+const route = require('./routes');
 
 // Router init
 route(app);

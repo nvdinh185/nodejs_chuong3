@@ -1,7 +1,7 @@
 class NewsController {
     // [GET] /news
     index(req, res) {
-        res.send('news...');
+        res.json({ a: 123 });
     }
 }
 
