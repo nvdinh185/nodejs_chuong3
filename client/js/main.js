@@ -12,7 +12,7 @@ async function getData() {
     listNews.forEach(function (news) {
         const liElement = document.createElement('li');
         liElement.innerHTML = `
-            <a href="http://google.com/"><img src=${news.img} alt=${news.img} /></a>
+            <a href="http://google.com/"><img src=images/${news.img} alt=${news.img} /></a>
             <div class="khoiphai">
                 <h2><a href="http://google.com/">${news.title}</a></h2>
                 <p>${news.content}</p>
