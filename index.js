@@ -8,10 +8,6 @@ const route = require('./routes');
 // Router init
 route(app);
 
-app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/client/index.html');
-})
-
 // start server
 const port = 3000;
 app.listen(port, () => console.log(`Server is starting on port ${port}...`));
