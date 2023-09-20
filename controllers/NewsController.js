@@ -2,7 +2,7 @@ class NewsController {
 
     // [GET] /news
     index(req, res) {
-        res.send({ a: 123 });
+        res.send({ name: 'Đây là 1 tin tức!' });
     }
 }
 
