@@ -5,7 +5,7 @@ headingElement.text('Trang tin VinaEnter Edu');
 const ulElement = $("#list");
 
 async function displayData() {
-    var listNews = await axios.get('http://localhost:3000/listNews');
+    var listNews = await axios.get('http://localhost:3000/list-news');
     listNews = listNews.data;
 
     var htmls = listNews.map(function (news) {
