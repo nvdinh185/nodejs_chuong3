@@ -1,8 +1,15 @@
+const News = require("../model/news.js");
+
 class NewsController {
 
     // [GET] /news
-    index(req, res) {
-        res.send({ name: 'Đây là 1 tin tức!' });
+    async getListNews(req, res) {
+        try {
+            const listNews = await News.find();
+            res.status(200).send(listNews);
+        } catch (err) {
+            res.status(500).send(err);
+        }
     }
 }
 
