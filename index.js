@@ -5,7 +5,7 @@ const app = express();
 
 const connect = async () => {
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017', {
+        await mongoose.connect('mongodb://127.0.0.1:27017/news', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
